@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Score : MonoBehaviour {
-	public GUIText scoreText;
+	public Text scoreText;
 	private int score;
 
 	// Use this for initialization
@@ -11,17 +12,12 @@ public class Score : MonoBehaviour {
 		UpdateScore ();
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-	public void AddScore (int newScoreValue)
+    public void AddScore()
 	{
-		score += newScoreValue;
+        Debug.Log(score);
+		score ++;
 		UpdateScore ();
 	}
-
 	void UpdateScore ()
 	{
 		scoreText.text = "Score: " + score;

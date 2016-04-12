@@ -3,39 +3,27 @@ using UnityEngine.SceneManagement;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
-public class PauseMenu : MonoBehaviour
-{
+public class PauseMenu : MonoBehaviour {
 
-    bool isShowing, Esc;
-
+    bool Esc;
     [SerializeField]
     CanvasGroup pauseMenuContainer;
     GameObject CheckCanvas;
 
-
-    void Start()
-    {
-        //pauseMenuContainer.GetComponent<CanvasGroup>();
-        //CheckCanvas.SetActive(isShowing);
-    }
     void Update()
     {
         CheckIfPaused();
     }
     void CheckIfPaused()
     {
-        Debug.Log("check1");
         if (Esc = Input.GetKey(KeyCode.Escape))
         {
-            Debug.Log("check2");
-            //CheckCanvas.SetActive(isShowing = true);
             Time.timeScale = 0.0f;
             pauseMenuContainer.alpha = 1;
             pauseMenuContainer.interactable = true;
             pauseMenuContainer.blocksRaycasts = true;
         }
     }
-
     public void TogglePause()
     {
             //isShowing = false;

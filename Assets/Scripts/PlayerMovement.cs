@@ -1,6 +1,4 @@
-﻿
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour 
 {
@@ -13,8 +11,4 @@ public class PlayerMovement : MonoBehaviour
 		movey = Input.GetAxis ("Vertical");
 		GetComponent<Rigidbody2D>().velocity = new Vector2 (movex * Speed, movey * Speed);
 	}
-
-
-
-
 }	
