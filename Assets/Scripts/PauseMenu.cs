@@ -6,7 +6,7 @@ using UnityEditor;
 public class PauseMenu : MonoBehaviour
 {
 
-    bool isShowing, Esc;
+    bool Esc;
 
     [SerializeField]
     CanvasGroup pauseMenuContainer;
