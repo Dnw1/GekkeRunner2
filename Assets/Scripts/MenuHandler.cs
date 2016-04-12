@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
+using System.Collections;
 using UnityEngine.SceneManagement;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
+
 public class MenuHandler : MonoBehaviour {
 
     public void StartGame() {
@@ -19,12 +18,5 @@ public class MenuHandler : MonoBehaviour {
     public void MainMenu()
     {
         SceneManager.LoadScene("Menu");
-    }
-    public void Exit()
-    {
-        Application.Quit();
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
     }
 }
