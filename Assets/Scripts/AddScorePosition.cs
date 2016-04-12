@@ -4,6 +4,7 @@ using System.Collections;
 public class AddScorePosition : MonoBehaviour {
 	[SerializeField]
 	private float xPositionToAddScore;
+    private float BeyondBorder = -11;
     public Score ScoreManager;
 	private Vector2 startPosition;
     public int newScoreValue { get; private set; }
@@ -20,5 +21,9 @@ public class AddScorePosition : MonoBehaviour {
             ScoreManager.AddScore();
 			this.transform.position = startPosition;
 		}
+        if (this.transform.position.x < BeyondBorder)
+        {
+            this.transform.position = startPosition;
+        }
 	}
 }

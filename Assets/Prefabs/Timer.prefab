@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 499002}
   - 114: {fileID: 11488536}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score1: {fileID: 0}
+  timerText: {fileID: 0}
   timer: 3200
 --- !u!1001 &100100000
 Prefab:
