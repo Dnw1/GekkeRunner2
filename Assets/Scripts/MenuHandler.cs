@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.SceneManagement;
-
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 public class MenuHandler : MonoBehaviour {
 
     public void StartGame() {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("FinalGameScene");
     }
     public void Controls()
     {
@@ -18,5 +19,12 @@ public class MenuHandler : MonoBehaviour {
     public void MainMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+    public void Quit()
+    {
+        Application.Quit();
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

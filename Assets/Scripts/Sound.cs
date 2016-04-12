@@ -20,12 +20,4 @@ public class Sound : MonoBehaviour
             Audio.PlayOneShot(impact, 1.0f);
         }
     }
-    void OnTriggerExit(Collider coll)
-    {
-        // When player moves out stop playing audio
-        if (player)
-        {
-            Audio.Stop();
-        }
-    }
 }
