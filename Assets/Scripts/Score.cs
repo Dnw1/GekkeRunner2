@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Score : MonoBehaviour {
 	public Text scoreText;
-	private int score;
+	public int score;
 
 	// Use this for initialization
 	void Start () {
