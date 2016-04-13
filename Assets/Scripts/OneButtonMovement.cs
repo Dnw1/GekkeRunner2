@@ -20,7 +20,6 @@ public class OneButtonMovement : MonoBehaviour {
 	void Update () {
 		if (Input.GetKey(keyCode)) {
 			transform.Translate(movementVector*Time.deltaTime, Space.World);
-
 		}
 	
 	}
