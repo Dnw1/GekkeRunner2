@@ -12,6 +12,8 @@ GameObject:
   - 114: {fileID: 11473136}
   - 114: {fileID: 11442552}
   - 58: {fileID: 5846092}
+  - 114: {fileID: 11453060}
+  - 95: {fileID: 9558788}
   m_Layer: 0
   m_Name: rainDropTest
   m_TagString: Obstacle
@@ -45,6 +47,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -5.14}
   serializedVersion: 2
   m_Radius: 1.82
+--- !u!95 &9558788
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108276}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d41abd318ac4d1840aec7f4179792437, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11442552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -57,6 +76,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 4
+--- !u!114 &11453060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a79ddf69fadf84abbe9d0a6ff320df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11473136
 MonoBehaviour:
   m_ObjectHideFlags: 1
