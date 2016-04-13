@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour {
     void Start()
     {
     }
-    void Update () {
+    void FixedUpdate () {
         UpdateTimer();
     }
     public void UpdateTimer()

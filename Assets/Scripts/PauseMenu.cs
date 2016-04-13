@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 public class PauseMenu : MonoBehaviour {
 
     bool Esc;
-    [SerializeField]
-    CanvasGroup pauseMenuContainer;
-    GameObject CheckCanvas;
+    [SerializeField] GameObject CheckCanvas; [SerializeField] GameObject panel;
 
     void Update()
     {
@@ -18,19 +17,14 @@ public class PauseMenu : MonoBehaviour {
     {
         if (Esc = Input.GetKey(KeyCode.Escape))
         {
+            panel.SetActive(true);
             Time.timeScale = 0.0f;
-            pauseMenuContainer.alpha = 1;
-            pauseMenuContainer.interactable = true;
-            pauseMenuContainer.blocksRaycasts = true;
         }
     }
     public void TogglePause()
     {
-            //isShowing = false;
-            Time.timeScale = 1.0f;
-            pauseMenuContainer.alpha = 0;
-            pauseMenuContainer.interactable = false;
-            pauseMenuContainer.blocksRaycasts = false;
+        panel.SetActive(false);
+        Time.timeScale = 1.0f;
     }
     public void LoadMenu()
     {
