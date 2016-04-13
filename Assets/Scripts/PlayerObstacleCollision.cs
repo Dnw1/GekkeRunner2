@@ -17,7 +17,6 @@ public class PlayerObstacleCollision : MonoBehaviour {
 	{
 		if (other.gameObject.tag == TagData.obstacleTag) 
 		{
-			Debug.Log ("AUW");
 			screenShake.StartShake ();
 			this.transform.position = startPosition;
 		}

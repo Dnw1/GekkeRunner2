@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour {
     public Score score1;
+	public Score score2;
     public Text timerText;
     public int timer = 3500;
     // Use this for initialization
@@ -20,8 +21,12 @@ public class Timer : MonoBehaviour {
         TimerText();
         if (score1.score == 10)
         {
-            SceneManager.LoadScene("Menu");
+			SceneManager.LoadScene("Player1Wins");
         }
+		else if (score2.score == 10)
+		{
+			SceneManager.LoadScene("Player 2 Wins");
+		}
         else if (timer == 0)
         {
             SceneManager.LoadScene("Menu");
