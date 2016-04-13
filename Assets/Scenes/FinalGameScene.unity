@@ -207,7 +207,7 @@ Prefab:
       objectReference: {fileID: 941370474}
     - target: {fileID: 11488536, guid: 51298edc82b172f4d8795e482af91036, type: 2}
       propertyPath: timer
-      value: 6000
+      value: 4500
       objectReference: {fileID: 0}
     - target: {fileID: 11488536, guid: 51298edc82b172f4d8795e482af91036, type: 2}
       propertyPath: score2
@@ -1353,7 +1353,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
